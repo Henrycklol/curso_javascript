@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula B6 - Exercício 03 - CursoEmVideo</title>
+</head>
+
+<body>
+    <p>e aí, testando, ou melhor dizendo: fazendo test-drive de javascript</p>
+
+    <!-- igual a lógica de programação no c#-->
+    <script>
+        // number sozinho serve pra converter de forma inteligente,
+        // mas em alguns momentos é simplesmente necessário usar o parseFloat ou int
+        var n1 = Number(window.prompt('digita um valor aí mano *voz do mano brown*'));
+        var n2 = Number.parseFloat(window.prompt('agora c vai mandar otro, mas precisa ser double tlgd'));
+        var soma = n1 + n2;
+        
+        window.confirm('blz, a parada é que a soma desses dois aí é: ' + soma);
+        // ou
+        window.confirm('blz, a parada é que a soma desses dois aí é: ' + String(soma));
+        // ou 
+        window.confirm('blz, a parada é que a soma desses dois aí é: ' + soma.toString);
+
+        // ou com !!!!!!!!!!template de string!!!!!!! (mto mais bonito e tranqs)
+        window.confirm(`blz, a parada é que a soma entre ${n1} e ${n2} é: ${soma}`); // SÓ COM CRASE!!!!
+
+        // (number + number) adição
+        // (string + string) concatenação
+    </script>
+</body>
+
+<script> </script>
+
+</html>

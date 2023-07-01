@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula B6 - Exercício 04 - CursoEmVideo</title>
+    <style>
+        body {
+            font: normal 11px "Times New Roman";
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var digitado = window.prompt('Fala alguma coisa aê tio')
+
+        //para escrever no documento (página), funciona como o writeline do c# 
+        document.write(`Então, o que você disse foi: "<strong>${digitado}</strong>" 
+        e tem ${digitado.length}</strong> letras. <br/>`) //length é pra retornar o tamanho de algo
+
+        document.write(`ent, meu champ, isso aí que tu disse foi interessante, 
+        mas em maíusculo fica assim ó: ${digitado.toUpperCase()}<br/>`)
+        // precisa de parênteses no upper porque é um método
+        //br é break-row (quebra de linha)
+
+        document.write(`ent, meu pogchamp, isso aí que tu disse foi interessante, 
+        mas em minúsculo fica assim ó: ${digitado.toLowerCase()}<br/>`) 
+
+        // agora se o usuário digitar números:
+        var exemplo = 145.5
+        exemplo.toFixed(2) //vai retornar 145.50 
+        exemplo.toFixed(2).replace('.',',') // vai trocar o ponto pela vírgula
+        //agora pra transformar em moeda do brasil
+        exemplo.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) 
+        // as chaves são pra trabalhar com os objetos e currency tá se referindo ao dinheiro
+
+        exemplo.toLocaleString('pt-BR', {style:'currency', currency:'USD'})
+
+        exemplo.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})
+    </script>
+</body>
+
+</html>
