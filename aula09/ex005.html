@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula C9 - Exercício 05 - CursoEmVideo</title>
+    <style>
+        body {
+            background-color: black;
+            color: whitesmoke;
+            font-style: normal 16pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>bora pra aula de DOM, mané</h3>
+    <p>o resultado dessa parada deve ser: </p>
+    <p>tô testando ainda... <strong>CALMAÊ, PORRA</strong></p>
+    <div id="msg">clicka no seu pai</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var teste = window.document.getElementById('msg') // teste tá pegando id de msg e alterando
+        teste.style.background = 'green'
+        teste.innerHTML = 'escrevi e saí correndo'
+
+        //cada um tá sobrescrevendo o outro
+        document.getElementById('msg').innerHTML = 'comando completo'
+
+        // com query selector
+        var teste = document.querySelector('div#msg') //se usa # porque pega pelo id
+        //var teste = document.querySelector('div.msg') //se usa . quando é classe
+        teste.style.background = 'gray'
+    </script>
+</body>
+
+</html>
