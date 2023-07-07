@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula C10 - Exercício 06 - CursoEmVideo</title>
+    <style>
+        div#area {
+            font: normal 20pt "Times New Roman";
+            background-color: black;
+            color: whitesmoke;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        interaja com seu pai
+    </div>
+    <script>
+        var validacao = document.getElementById("area")
+        validacao.addEventListener("click", clicar)
+        validacao.addEventListener("mouseenter", entrar)
+        validacao.addEventListener("mouseout", sair)
+
+        function clicar() {
+            validacao.innerText = 'clickado'
+            validacao.style.background = 'gray'
+        }
+        function entrar() {
+            validacao.innerText = 'sozinho no setor'
+        }
+        function sair() {
+            validacao.innerText = 'sai daqui seu cachorro'
+            validacao.style.background = 'black'
+        }
+    </script>
+</body>
+
+</html>
