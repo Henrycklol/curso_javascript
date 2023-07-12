@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula D11 - Exercício 11 - CursoEmVideo</title>
+</head>
+<body>
+    <h1>Detector of Nigeria Scam</h1>
+    <p>Informe seu país para análise</p>
+    <input type="text" id="txtpais" placeholder="país">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar(){
+            var txtpais = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            var pais = txtpais.value 
+            res.innerHTML = `Seu país é ${pais}.`
+            if (pais == 'Nigeria'){
+                res.innerHTML += '<p>I fell scam of prince de merda</p>'
+            }
+            
+        }
+    </script>
+</body>
+</html>

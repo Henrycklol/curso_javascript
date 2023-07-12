@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula D11 - Exercício 10 - CursoEmVideo</title>
+</head>
+
+<body>
+    <h1>Sistema de contenção de barbeiros</h1>
+    Velocidade do elemento: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()"> 
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>tá quanto o corte? <strong>barbeiro</strong> do crl</p>`
+            }
+            res.innerHTML += `<p>vê se não dirige que nem o meu irmão</p>`
+        }
+    </script>
+</body>
+
+</html>
