@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula D12 - Exercício modelo - CursoEmVideo</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Aula D12 - Exercício verificador - CursoEmVideo</title>
+    <link rel="stylesheet" href="../ex015/estilo.css">
 </head>
+
 <body>
     <header>
-        <h1>insira um nome foda aqui</h1>
+        <h1>VERIFICADOR DE IDADE</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <p>Nasceu quando lek:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Segzo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Cabra safado</label>
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Sinhá moça</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div>olá olá olá olá</div>
+        <div id="res">
+            ave maria
+        </div>
     </section>
     <footer>
         <p>&copy; CursoEmAudio</p>
     </footer>
-    <script src="../aula12ex/script.js"></script>
+    <script src="../ex015/script.js"></script>
 </body>
+
 </html>
