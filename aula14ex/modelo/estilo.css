@@ -1,0 +1,24 @@
+body {
+    background-color: rgba(86, 44, 124, 0.472);
+    font: "Times New Roman" 12px;
+}
+
+header {
+color:white;
+text-align: center;
+}
+
+section {
+background: whitesomoke;
+border-radius: 3px;
+padding: 12px;
+width: 400px;
+margin: auto;
+box-shadow: 3px 3px 5px black;
+}
+
+footer {
+color:whitesmoke;
+text-align: center;
+font-style: italic;
+}
